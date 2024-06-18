@@ -12,11 +12,11 @@ class MainActivity : AppCompatActivity() {
             super.onCreate(savedInstanceState)
             binding = ActivityMainBinding.inflate(layoutInflater)
             setContentView(binding.root)
-            val numbers = fibonacci(100)
+            val numbers:List<Int> = fibonacci(100)
             binding.rvNumbers.layoutManager = LinearLayoutManager(this)
 
 
-            val numberAdapter = fibonacci(numbers)
+            val numberAdapter = fibonacciseriesRecyclerViewAdapter(numbers)
             binding.rvNumbers.adapter = numberAdapter
 
         }

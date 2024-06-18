@@ -5,9 +5,8 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import com.akirachix.fibonacci_series.R
 
-class FibonacciRecyclerViewAdapter (var numbers:List<Int>):RecyclerView.Adapter<NumbersViewHolder>(){
+class fibonacciseriesRecyclerViewAdapter (var numbers:List<Int>):RecyclerView.Adapter<NumbersViewHolder>(){
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): NumbersViewHolder {
         val numberView = LayoutInflater.from(parent.context)
             .inflate(R.layout.fibonumbers,parent,false)
